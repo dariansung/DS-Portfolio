@@ -7,7 +7,7 @@
     padding-left: 10px;
 }
 
-.navbar-button > a:any-link{
+.navbar-button > a:any-link {
     background-color: lightgrey;
     color: black;
     padding: 10px;
@@ -15,15 +15,42 @@
     text-decoration: none;
 }
 
-.navbar-button > a:hover{
+.navbar-button > a:hover {
     background-color: darkgray;
     color: white;
 }
 
-.main {
+.home-main {
     display: flex;
 }
 
-.main > div {
+.home-main > div {
     padding: 10px;
+}
+
+.proj-link {
+    display: flex;
+}
+
+.proj-link > div {
+    padding: 10px;
+}
+
+.proj-img > a > img {
+    height: auto;
+    max-width: 200px;
+}
+
+.proj-textbox {
+    position: relative;
+    flex-grow: 1;
+    width: 200px;
+}
+
+.proj-text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
