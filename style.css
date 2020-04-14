@@ -4,10 +4,20 @@
 
 .navbar {
     display: flex;
+    padding-left: 10px;
 }
 
-.navbar-button {
+.navbar-button > a:any-link{
+    background-color: lightgrey;
+    color: black;
     padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar-button > a:hover{
+    background-color: darkgray;
+    color: white;
 }
 
 .main {
