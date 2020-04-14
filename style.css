@@ -55,6 +55,20 @@
     transform: translateY(-50%);
 }
 
+.img-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.img-main > div > img {
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+}
+
 .vid-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
