@@ -4,6 +4,7 @@
         <title>Images</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="header">
@@ -55,6 +56,7 @@
                 <img src="images/banquet2019.jpeg">
             </div>
         </div>
+        <button class="scroll-top" onclick="scrollToTop()">Scroll to Top</button>
         <script>
             $(document).on("click", event => {
                 if($(event.target).has(".lightbox-img").length){

@@ -28,6 +28,21 @@
     color: black;
 }
 
+.scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 20;
+    border: none;
+    outline: none;
+    padding: 8px;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
 .home-main {
     display: flex;
 }
@@ -89,6 +104,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     justify-content: center;
+    z-index: 99;
 }
 
 .lightbox-img {
