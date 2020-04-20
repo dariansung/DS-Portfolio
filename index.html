@@ -3,24 +3,18 @@
     <head>
         <title>Darian Sung</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="header">
             <h1>Darian Sung</h1>
-        </div>
-        <div class="navbar">
-            <div class="navbar-button">
-                <a href="index.html">Home</a>
+            <div class="navbar">
+
             </div>
-            <div class="navbar-button">
-                <a href="projects.html">Projects</a>
-            </div>
-            <div class="navbar-button">
-                <a href="images.html">Images</a>
-            </div>
-            <div class="navbar-button">
-                <a href="videos.html">Videos</a>
-            </div>
+            <script>
+                $(".navbar").load("navbar.html");
+            </script>
         </div>
         <div class="home-main">
             <div>
@@ -31,5 +25,6 @@
                 <p>Hello! My name is Darian Sung and I am a second year computer science major at UCSB. In my free time, I like to play the guitar and watch bad movies.</p>
             </div>
         </div>
+        <button class="scroll-top" onclick="scrollToTop()">Scroll to Top</button>
     </body>
 </html>

@@ -3,24 +3,18 @@
     <head>
         <title>Projects</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="header">
             <h1>Projects</h1>
-        </div>
-        <div class="navbar">
-            <div class="navbar-button">
-                <a href="index.html">Home</a>
+            <div class="navbar">
+                
             </div>
-            <div class="navbar-button">
-                <a href="projects.html">Projects</a>
-            </div>
-            <div class="navbar-button">
-                <a href="images.html">Images</a>
-            </div>
-            <div class="navbar-button">
-                <a href="videos.html">Videos</a>
-            </div>
+            <script>
+                $(".navbar").load("navbar.html")
+            </script>
         </div>
         <div class="proj-main">
             <div class="proj-link">
@@ -36,5 +30,6 @@
                 </div>
             </div>
         </div>
+        <button class="scroll-top" onclick="scrollToTop()">Scroll to Top</button>
     </body>
 </html>
