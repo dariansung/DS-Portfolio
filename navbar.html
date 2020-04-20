@@ -1,12 +1,26 @@
 <div class="navbar-button">
-    <a href="index.html">Home</a>
+    <a id="home-button" href="index.html">Home</a>
 </div>
 <div class="navbar-button">
-    <a href="projects.html">Projects</a>
+    <a id="proj-button" href="projects.html">Projects</a>
 </div>
 <div class="navbar-button">
-    <a href="images.html">Images</a>
+    <a id="img-button" href="images.html">Images</a>
 </div>
 <div class="navbar-button">
-    <a href="videos.html">Videos</a>
+    <a id="vid-button" href="videos.html">Videos</a>
 </div>
+<script>
+    if(document.querySelector(".home-main")){
+        document.getElementById("home-button").style.backgroundColor = "lightgray";
+    }
+    else if(document.querySelector(".proj-main")){
+        document.getElementById("proj-button").style.backgroundColor = "lightgray";
+    }
+    else if(document.querySelector(".img-main")){
+        document.getElementById("img-button").style.backgroundColor = "lightgray";
+    }
+    else if(document.querySelector(".vid-main")){
+        document.getElementById("vid-button").style.backgroundColor = "lightgray";
+    }
+</script>
