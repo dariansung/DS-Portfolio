@@ -16,24 +16,67 @@
             </script>
         </div>
         <div class="img-main">
-            <div class="img1">
+            <div>
+                <img src="images/SAD2020Mendoba.jpeg" onclick="openImage(0)">
+            </div>
+            <div>
+                <img src="images/beachstar.jpeg" onclick="openImage(1)">
+            </div>
+            <div>
+                <img src="images/thanksgivingchapel2019.jpeg" onclick="openImage(2)">
+            </div>
+            <div>
+                <img src="images/kayaking.jpeg" onclick="openImage(3)">
+            </div>
+            <div>
+                <img src="images/uwu.jpg" onclick="openImage(4)">
+            </div>
+            <div>
+                <img src="images/banquet2019.jpeg" onclick="openImage(5)">
+            </div>
+        </div>
+        <div id="lightbox">
+            <div class="lightbox-img">
                 <img src="images/SAD2020Mendoba.jpeg">
             </div>
-            <div class="img2">
+            <div class="lightbox-img">
                 <img src="images/beachstar.jpeg">
             </div>
-            <div class="img3">
+            <div class="lightbox-img">
                 <img src="images/thanksgivingchapel2019.jpeg">
             </div>
-            <div class="img4">
+            <div class="lightbox-img">
                 <img src="images/kayaking.jpeg">
             </div>
-            <div class="img5">
+            <div class="lightbox-img">
                 <img src="images/uwu.jpg">
             </div>
-            <div class="img6">
+            <div class="lightbox-img">
                 <img src="images/banquet2019.jpeg">
             </div>
         </div>
+        <script>
+            $(document).on("click", event => {
+                if($(event.target).has(".lightbox-img").length){
+                    $("#lightbox").hide();
+                }
+            });
+            function openImage(imageIndex){
+                console.log("In openImage()")
+                const images = document.getElementsByClassName("lightbox-img");
+                document.getElementById("lightbox").style.display = "flex";
+                for(let i = 0; i < images.length; i++){
+                    if(i == imageIndex){
+                        images[i].style.display = "block";
+                    }
+                    else{
+                        images[i].style.display = "none";
+                    }
+                }
+            }
+            function closeLightbox(){
+                document.getElementById("lightbox").style.display = "none";
+            }
+        </script>
     </body>
 </html>

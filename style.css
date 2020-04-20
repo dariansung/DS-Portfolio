@@ -65,7 +65,7 @@
 
 .img-main {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 400px);
+    grid-template-columns: repeat(auto-fill, 300px);
     gap: 1em;
     padding: 8px;
     justify-content: center;
@@ -74,7 +74,35 @@
 .img-main > div > img {
     height: auto;
     max-width: 100%;
-    display: block;
+}
+
+.img-main > div > img:hover {
+    cursor: pointer;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+}
+
+.lightbox-img {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox-img img{
+    max-width: 85vw;
+    max-height: 85vw;
+    width: auto;
+    height: auto;
 }
 
 .vid-main {
